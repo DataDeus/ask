@@ -1,25 +1,47 @@
+:root {
+    --primary-color: #8635d8;
+    --secondary-color: #c99cf7;
+    /* --secondary-color: #dbc7f0; */
+    --light-color: white;
+    --dark-color: black;
+}
+
 body {
+
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-color: #F8C8DC;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
 }
 
 #noButton {
     position: absolute;
     margin-left: 150px;
     transition: 0.5s;
+    font-size: 20px;
 }
 
 #yesButton {
     position: absolute;
     margin-right: 150px;
+    font-size: 20px;
 }
 
 .header_text {
     font-family: 'Nunito';
     font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-decoration: line-through;
+}
+
+.second_header {
+    font-family: 'Nunito';
+    font-size: 60px;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -34,10 +56,14 @@ body {
     align-items: center;
     margin-top: 20px;
     margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
 }
 
 .btn {
-    background-color: #FFB6C1;
+    background-color: var(--primary-color);
+    font-size: 40px;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -48,6 +74,8 @@ body {
     border: none;
     border-radius: 12px;
     transition: background-color 0.3s ease;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .gif_container {
